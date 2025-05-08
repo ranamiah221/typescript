@@ -6,8 +6,8 @@ function formatString(input:string, toUpper?: boolean):string{
   }
   return input.toUpperCase() 
 }
-const result1:string = formatString('hello')
-console.log(result1);
+// const result1:string = formatString('hello')
+// console.log(result1);
 
 
 
@@ -20,17 +20,17 @@ const books = [
     { title: "Book B", rating: 3.2 },
     { title: "Book C", rating: 5.0 }
   ];
-  const result:{ title: string; rating: number }[] = (filterByRating(books));
-  console.log(result)
+  // const result:{ title: string; rating: number }[] = (filterByRating(books));
+  // console.log(result)
 
 
 
 function concatenateArrays<T>(...arrays:T[][]): T[]{
       return arrays.reduce((acc, current)=> acc.concat(current),[]);
 }
-const result3:string[] = concatenateArrays<string>(["a", "b"], ["c"])
-const result2:number[]= concatenateArrays<number>([1, 2], [3, 4], [5]);
-console.log(result3, result2);
+// const result3:string[] = concatenateArrays<string>(["a", "b"], ["c"])
+// const result2:number[]= concatenateArrays<number>([1, 2], [3, 4], [5]);
+// console.log(result3, result2);
 
 
 
@@ -44,8 +44,8 @@ class Vehicle{
         this._year = year;
     }
 
-    getInfo():string{
-        return `Make: ${this._make}, Year: ${this._year}`;
+    getInfo(){
+        console.log(`Make: ${this._make}, Year: ${this._year}`);
     }
 }
 
@@ -55,14 +55,14 @@ class Car extends Vehicle{
         super(make, year)
         this._model = model;
     }
-    getModel():string{
-        return `Model: ${this._model}`;
+    getModel(){
+        console.log(`Model: ${this._model}`);
     }
 }
 
-const myCar = new Car("Toyota", 2020,"Corolla");
-console.log(myCar.getInfo());  
-console.log(myCar.getModel()); 
+// const myCar = new Car("Toyota", 2020,"Corolla");
+// myCar.getInfo();  
+// myCar.getModel(); 
 
 
 
@@ -104,8 +104,8 @@ const products = [
     { name: "Notebook", price: 25 },
     { name: "Bag", price: 50 }
   ];
- const expensiveProduct:Product|null = getMostExpensiveProduct(products); 
- console.log(expensiveProduct); 
+//  const expensiveProduct:Product|null = getMostExpensiveProduct(products); 
+//  console.log(expensiveProduct); 
 
 
 
@@ -127,8 +127,8 @@ enum Day {
     }
     return "Weekday"
   }
- const resultDay:string=getDayType(Day.Monday); 
- console.log(resultDay);
+//  const resultDay:string=getDayType(Day.Monday); 
+//  console.log(resultDay);
 
 
 
