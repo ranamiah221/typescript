@@ -74,8 +74,8 @@ function processValue(value: string | number): number{
     return value * 2
     
 }
-const newProcessValue:number=processValue(10)
-console.log(newProcessValue);
+// const newProcessValue:number=processValue(10)
+// console.log(newProcessValue);
 
 
 
@@ -156,8 +156,6 @@ async function run() {
   }
 }
 run()
-
-
 
 
 
